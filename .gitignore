@@ -199,6 +199,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+
 .sass-cache
 /Gemfile.lock
 /.jekyll-cache/
