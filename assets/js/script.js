@@ -15,26 +15,19 @@ function ResizeTOCHeight(){
     }
 };
 
-function ResizeTitleBar(){
-    // console.log(`window.innerWidth:${window.innerWidth}, titleRightObj.clientWidth:${titleRightObj.clientWidth}, titleLeftObj.style.width:${titleLeftObj.style.width}`);
-    titleLeftObj.style.width = (window.innerWidth - titleRightObj.clientWidth - 20) + "px";
-}
 
 if(logoImage){
     logoImage.onload = function(){
         ResizeTOCHeight();
-        ResizeTitleBar();
     };
 }
 
 window.onload = function(){
     ResizeTOCHeight();
-    ResizeTitleBar();
 };
 
 window.onresize = function(){
     ResizeTOCHeight();
-    ResizeTitleBar();
 };
 
 //------------------------------------------------------------------------- /for Style
