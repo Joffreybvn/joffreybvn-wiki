@@ -175,4 +175,6 @@ footer { padding-left: 290px; float: left; bottom: 50px; -webkit-font-smoothing:
 
 @media print { #mainContents { padding: 0.4in; font-size: 12pt; color: #444; } }
 
+summary { margin-bottom: 10px; }
+
 /*# sourceMappingURL=style.css.map */

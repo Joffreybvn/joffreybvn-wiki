@@ -11,7 +11,10 @@ github:
   repository_url: https://github.com/Joffreybvn/joffreybvn-wiki
   owner_url: https://github.com/Joffreybvn
 
+markdown: CommonMarkGhPages
+
 plugins:
+  - jekyll-commonmark-ghpages
   - jekyll-sitemap
   - jekyll-mentions
   - jemoji

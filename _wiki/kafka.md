@@ -9,18 +9,20 @@ Offical API documentation: https://kafka.apache.org/documentation
 ## Key concepts
 
 ### Distributed messaging system
-See video "Messaging queue basics".
+Messaging queue basics (*Youtube*): [External link](https://www.youtube.com/watch?v=sfQwMu0SCT8)
 
-## Docker images
+## Docker 
+
+### Docker images
 - Kafka + Zookeeper (*Obsidiandynamics*): [DockerHub](https://hub.docker.com/r/obsidiandynamics/kafka)
 - Kafdrop, a Kafka web UI (*Obsidiandynamics*): [DockerHub](https://hub.docker.com/r/obsidiandynamics/kafdrop)
 
-## Docker compose
+### Docker compose
 
 <details>
 <summary>Kafka + Zookeeper + Kafdrop</summary>
 
-```
+```text
 version: "2"
 services:
   kafdrop:
@@ -46,16 +48,17 @@ services:
 ```
 </details>
 
-## Clients
+
+## Kafka clients
 
 ### Python
  - Confluent's Python client, for `>= 0.8`: [Github](https://github.com/confluentinc/confluent-kafka-python)
 
-## External links and resources
+## Other resources
 
 ### Articles
  - Kafka for beginner (*Medium*): [External link](https://medium.com/@rinu.gour123/kafka-for-beginners-74ec101bc82d) - [Local copy](https://static.joffreybvn.be/file/joffreybvn/articles/kafka-for-beginners.html)
  - Kafka in a nutshell + Quickstart Docker (*Medium*): [External link](https://medium.com/swlh/apache-kafka-in-a-nutshell-5782b01d9ffb) - [Local copy](https://static.joffreybvn.be/file/joffreybvn/articles/apache-kafka-in-a-nutshell.html)
 
 ### Videos
- - Messaging queue basics (*Youtube*): [External link](https://www.youtube.com/watch?v=sfQwMu0SCT8)
+
