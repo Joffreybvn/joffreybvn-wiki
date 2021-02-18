@@ -7,4 +7,4 @@ At the begining, I hosted some notes and homemade cheatsheets on github. At the 
 
 - Install gems from **Gemfile**: `bundle install`
 - Serve website: `bundle exec jekyll serve`
-- Build website: `bundle exec jekyll build -d ./docs`
+- Build website: `bundle exec jekyll build`

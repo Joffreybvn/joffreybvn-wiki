@@ -3,11 +3,14 @@ description: Knowledge base about programming, machine learning, and many more s
 show_downloads: true
 git_branch: master
 logo_url: https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png
-google_analytics:
-wiki_folder: wiki
-custom_head: false
-custom_sidebar: false
-custom_footer: false
+
+relative_url: ../
+github:
+  zip_url: https://github.com/Joffreybvn/joffreybvn-wiki/archive/master.zip
+  tar_url: https://github.com/Joffreybvn/joffreybvn-wiki/tarball/master
+  repository_url: https://github.com/Joffreybvn/joffreybvn-wiki
+  owner_url: https://github.com/Joffreybvn
+
 plugins:
   - jekyll-sitemap
   - jekyll-mentions
@@ -15,3 +18,12 @@ plugins:
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-seo-tag
+
+source: .
+destination: ./docs
+exclude: ["docs/"]
+
+collections:
+  wiki:
+    output: true
+    permalink: /:path/
