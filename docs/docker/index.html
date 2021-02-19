@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/wiki-features.js"></script>
+
+    
+
+    
+
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Docker | Joffrey Bienvenu&#39;s Wiki</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Docker" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Docker" />
+<meta property="og:description" content="Docker" />
+<meta property="og:site_name" content="Joffrey Bienvenu&#39;s Wiki" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-02-19T22:25:38+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Docker" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Docker","dateModified":"2021-02-19T22:25:38+01:00","datePublished":"2021-02-19T22:25:38+01:00","url":"/docker/","mainEntityOfPage":{"@type":"WebPage","@id":"/docker/"},"description":"Docker","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <div id="titleBar">
+      <div id="title-wrapper">
+          <div id="titleLeft">
+              <a class="mainPagelink" href="../">
+                  <h1>Joffrey Bienvenu's Wiki</h1>
+              </a>
+              <p id="titleDescription">Knowledge base about programming, machine learning, and many more stuff</p>
+          </div>
+          <div id="titleRight">
+              
+              <ul class="downloads">
+                  <li><a href="https://github.com/Joffreybvn/joffreybvn-wiki/archive/master.zip"><div class="normal">Download</div><strong>ZIP File</strong></a></li>
+                  <li><a href="https://github.com/Joffreybvn/joffreybvn-wiki/tarball/master"><div class="normal">Download</div><strong>TAR Ball</strong></a></li>
+                  <li><a href="https://github.com/Joffreybvn/joffreybvn-wiki"><div class="normal">View On</div><strong>GitHub</strong></a></li>
+              </ul>
+              
+          </div>
+      </div>
+    </div>
+
+    <div class="wrapper" id="mainContents">
+      <header>
+        
+        <a href="">
+          <img id="logo_url_a" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png">
+        </a>
+        
+
+        
+
+        
+
+        <div class="tocTitle">Table of Contents</div>
+        <div id="toc"></div>
+        
+      </header>
+
+      <section>
+        <div id="content">
+          <h1 id="docker">Docker</h1>
+<h2 id="installation">Installation</h2>
+<h3 id="install-docker">Install Docker</h3>
+<p>Use the convenience script: <a href="https://github.com/docker/docker-install">Github</a></p>
+<h3 id="install-docker-compose">Install Docker-compose</h3>
+<p>Source: <a href="https://docs.docker.com/compose/install/">Docker</a></p>
+<p><strong>Step 1</strong>: Download the last version of Docker Compose</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>curl <span class="nt">-L</span> <span class="s2">"https://github.com/docker/compose/releases/download/1.28.2/docker-compose-</span><span class="si">$(</span><span class="nb">uname</span> <span class="nt">-s</span><span class="si">)</span><span class="s2">-</span><span class="si">$(</span><span class="nb">uname</span> <span class="nt">-m</span><span class="si">)</span><span class="s2">"</span> <span class="nt">-o</span> /usr/local/bin/docker-compose
+</code></pre></div></div>
+<p><strong>Step 2</strong>: Apply executable permissions to the binary</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chmod</span> +x /usr/local/bin/docker-compose
+</code></pre></div></div>
+<p><strong>Step 3</strong>: Test the installation</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose <span class="nt">--version</span>
+</code></pre></div></div>
+
+        </div>
+          
+        
+
+      </section>
+      <footer>
+        
+
+        
+        
+      </footer>
+    </div>
+    <script src="assets/js/scale.fix.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#toc').toc({
+              noBackToTopLinks: true,
+              title: '',
+              minimumHeaders: 1,
+              headers: 'section h1, section h2, section h3, section h4, section h5, section h6',
+              listType: 'ul',
+              showEffect: 'none',
+              classes: {list: 'tocList',
+                        item: 'tocItem'}
+            });
+        });
+    </script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
