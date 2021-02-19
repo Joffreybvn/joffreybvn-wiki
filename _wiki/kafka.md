@@ -67,7 +67,7 @@ services:
 ### Python
  - Confluent's Python client, for `>= 0.8`: [Github](https://github.com/confluentinc/confluent-kafka-python)
 
-## Kafka channels
+## Flafka - Flume meet Kafka
 
 A [Kafka Channel](http://flume.apache.org/FlumeUserGuide.html#kafka-channel) is a type of [Flume Channel](http://flume.apache.org/FlumeUserGuide.html#flume-channels). Apache [Flume](https://flume.apache.org/) is an alternative to Kafka.
 
@@ -81,6 +81,10 @@ When a Flume source receives an event, it stores it into one or more channels. T
 
 The key point here is that: "*The sink removes the event from the channel*". In pure Kafka, data is kept in the topic for 2 weeks (by default).
 
+### Kafka and Flume
+
+- Advantages of Flume and Kafka together: [Cloudera](https://blog.cloudera.com/flafka-apache-flume-meets-apache-kafka-for-event-processing/) - [Local copy](https://static.joffreybvn.be/file/joffreybvn/articles/flafka-apache-flume-meets-apache-kafka.html)
+- Deploying Kafka + Flume and uses cases: [BigData MadeSimple](https://bigdata-madesimple.com/what-is-apache-flafka-how-to-use-it-with-flume-for-data-ingestion-tutorial/) - [Local copy](https://static.joffreybvn.be/file/joffreybvn/articles/what-is-apache-flafka-how-to-use-it-with-flume.html)
 
 ## Other resources
 
