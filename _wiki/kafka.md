@@ -67,6 +67,21 @@ services:
 ### Python
  - Confluent's Python client, for `>= 0.8`: [Github](https://github.com/confluentinc/confluent-kafka-python)
 
+## Kafka channels
+
+A [Kafka Channel](http://flume.apache.org/FlumeUserGuide.html#kafka-channel) is a type of [Flume Channel](http://flume.apache.org/FlumeUserGuide.html#flume-channels). Apache [Flume](https://flume.apache.org/) is an alternative to Kafka.
+
+### Why using Flume channels ?
+
+From the [Flume Docs](https://flume.apache.org/FlumeUserGuide.html#architecture):
+
+![Flume](../assets/images/flume.png)
+
+When a Flume source receives an event, it stores it into one or more channels. The channel is a passive store that keeps the event until it’s consumed by a Flume sink. The file channel is one example – it is backed by the local filesystem. The sink **removes the event from the channel** and puts it into an external repository like HDFS (via Flume HDFS sink) or forwards it to the Flume source of the next Flume agent (next hop) in the flow.
+
+The key point here is that: "*The sink removes the event from the channel*". In pure Kafka, data is kept in the topic for 2 weeks (by default).
+
+
 ## Other resources
 
  - Kafka for beginner: [Medium](https://medium.com/@rinu.gour123/kafka-for-beginners-74ec101bc82d) - [Local copy](https://static.joffreybvn.be/file/joffreybvn/articles/kafka-for-beginners.html)
